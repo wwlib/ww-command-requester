@@ -1,0 +1,43 @@
+{
+  "name": "@jibo/command-requester",
+  "version": "1.0.5",
+  "description": "Library for making RCP requests to the robot",
+  "author": "Jibo, Inc.",
+  "copyright": "Copyright (c) 2014-2018 Jibo, Inc. All Rights Reserved",
+  "license": "BSD-3-Clause",
+  "main": "lib/command-requester.js",
+  "private": false,
+  "typings": "lib/dts/index.d.ts",
+  "scripts": {
+    "build": "gulp debug",
+    "build:release": "gulp",
+    "clean": "gulp clean-all",
+    "watch": "gulp watch",
+    "docs": "gulp docs",
+    "docs:public": "gulp docs-public",
+    "test:debug": "gulp test --debug",
+    "test": "gulp test && istanbul report",
+    "test:report": "gulp test-report"
+  },
+  "engines": {
+    "node": ">=6.0"
+  },
+  "dependencies": {
+    "@jibo/command-protocol": "^1.0.4",
+    "ws": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "6.0.94",
+    "@types/ws": "^3.0.2",
+    "ajv": "^5.2.2",
+    "gulp": "^3.9.1",
+    "istanbul": "0.4.5",
+    "jibo-gulp": "^8.0.0",
+    "mjpeg2jpegs": "^1.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.jibo.com:sdk/sdk.git"
+  },
+  "files": [ "LICENSE.md", "lib/**/*" ]
+}
